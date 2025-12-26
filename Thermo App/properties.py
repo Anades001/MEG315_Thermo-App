@@ -1,4 +1,4 @@
-import CoolProp.CoolProp as CP
+import CoolProp as CP
 
 # -------------------------------
 # BASIC PROPERTIES
@@ -54,3 +54,4 @@ def entropy_from_Pv(fluid, P, v):
 
 def temperature_from_PS(fluid, P, s):
     return CP.PropsSI("T", "P", P, "S", s, fluid)
+
