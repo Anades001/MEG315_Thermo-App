@@ -1,5 +1,5 @@
 import numpy as np
-import CoolProp.CoolProp as CP
+import CoolProp as CP
 
 from properties import (
     specific_volume,
@@ -295,4 +295,5 @@ def turbine_discharge(V_tank, P1_bar, T1_C, P2_bar):
     Ss = np.full_like(Ps, s1) # Vertical line on T-s diagram
     Vs = [(m_initial / CP.PropsSI('D', 'P', p, 'S', s1, 'Air')) for p in Ps]
     
+
     return Ts, Ps, Vs, Ss, work_max, m_initial
