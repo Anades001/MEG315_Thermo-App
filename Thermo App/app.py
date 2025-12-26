@@ -1,6 +1,6 @@
 import streamlit as st
-from processes import *
-from plots import *
+from processes import processes.py
+from plots import plotly
 import pandas as pd
 
 def export_results(data_dict):
@@ -373,4 +373,5 @@ elif process == "Rankine Cycle Template":
         
     with col4:
         st.write("### 4. Pump")
+
         st.info("Work Input")
